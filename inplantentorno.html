@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sílvia de Castro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<!-- contingut de la web -->
+<body>
+
+    <!-- menú -->
+<div id="navbar">
+  <a href="index.html">Proyectos</a>
+  <a href="#about"  onclick="openNav()">About</a>
+</div>
+    <!-- JavaScript per fer que el menú s'amagui al fer scroll down -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+    <!-- about desplegable -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p id="about"><b>Sílvia de Castro, 1993</b>
+  <br>
+  <br>Experiencia:
+  <br>act. ⸻ Diseñador gráfico freelance
+  <br>2020/febr 2021 ⸻ Diseñador gráfico en Run
+  <br>2017/2019  ⸻ Fotogrametría con drones y técnico de calidad en SITEP
+  <br>
+  <br>Formación:
+  <br>act ⸻ Learning p5.js, a JavaScript library for creative coding
+  <br>2019/2020 ⸻ Máster en Diseño Gráfico, ELISAVA 
+  <br>2018 ⸻  Curso de Serigrafía, Centre cívic Pati Llimona
+  <br>2018 ⸻ Curso Técnico Superior en Diseño Gráfico y Maquetación, Seeway
+  <br>2015/2016 ⸻ Máster en Teledetección y Sistemas de Información Geográfica, Universitat Autònoma de Barcelona (UAB)
+  <br>2011/2015 ⸻ Grado en Ciencias Ambientales, Universitat de Barcelona (UB)
+  <br>
+  <br>Premios: 
+  <br>ADG Laus Estudiantes 2021 ⸻ Proyecto inplant (Bronce)
+  <br>
+  <br>Contacto: 
+  <br>sdecastro11@gmail.com 
+  </p> 
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "30vw";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+<div class="description">
+    <p><b>inplant - Gráfica de entorno (2019-2020)</b>
+    <br>
+    <br>
+    Para la marca inplant se diseña un pavellón experimental lleno de plantas purificadoras de aire.
+    La instalación es itinerante y se ubica en distintos puntos de la ciudad para mostrar a los transeuntes
+    la diferencia de calidad del aire que hay dentro del pavellón y fuera. Su objetivo es demostrar a los usuarios
+    que existen unas plantas que permiten purificar el aire de los espacios interiores y acercarles a inplant. 
+    Esta marca forma parte del proyecto final de máster, realizado junto 
+    con Jonathan Rodríguez, durante el Máster en Diseño Gráfico (MDG 19/20) de ELISAVA. 
+    El objetivo del proyecto es crear y diseñar una marca que dé solución a un problema 
+    real para mejorar la calidad de vida de las personas.
+    <br>
+    <br>
+    <i>Premio Laus Estudiantes 2021 - Bronce</i>
+    </p>
+    
+</div>
+
+<div class="project-images">
+
+  <img src="images/transparent.png" style="width:100%;">
+  
+  <img src="images/render-interior.jpg" style="width:100%;">
+  <img src="images/render-frontal.jpg" style="width:100%;">
+  <img src="images/render-darrera.jpg" style="width:100%;">
+      
+</div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sílvia de Castro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="p5.js"></script>
+    <script src="sketch.js"></script>
+</head>
+
+
+<!-- contingut de la web -->
+<body>
+
+    <!-- header -->
+  <div id="header">
+  Welcome to my portfolio, a multidisciplinary mix of graphic design, code and motion.
+  </div>
+
+    <!-- menú -->
+  <div id="navbar">
+  <a href="index.html">Proyectos</a>
+  <a href="#about"  onclick="openNav()">About</a> 
+  </div>
+
+    <!-- JavaScript per fer que el menú s'amagui al fer scroll down -->
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+  }
+  </script> 
+
+    <!-- about desplegable -->
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p id="about"><b>Sílvia de Castro, 1993</b>
+  <br>
+  <br>Experiencia:
+  <br>act. ⸻ Diseñador gráfico freelance
+  <br>2020/febr 2021 ⸻ Diseñador gráfico en Run
+  <br>2017/2019  ⸻ Fotogrametría con drones y técnico de calidad en SITEP
+  <br>
+  <br>Formación:
+  <br>act ⸻ Learning p5.js, a JavaScript library for creative coding
+  <br>2019/2020 ⸻ Máster en Diseño Gráfico, ELISAVA 
+  <br>2018 ⸻  Curso de Serigrafía, Centre cívic Pati Llimona
+  <br>2018 ⸻ Curso Técnico Superior en Diseño Gráfico y Maquetación, Seeway
+  <br>2015/2016 ⸻ Máster en Teledetección y Sistemas de Información Geográfica, Universitat Autònoma de Barcelona (UAB)
+  <br>2011/2015 ⸻ Grado en Ciencias Ambientales, Universitat de Barcelona (UB)
+  <br>
+  <br>Premios: 
+  <br>ADG Laus Estudiantes 2021 ⸻ Proyecto inplant (Bronce)
+  <br>
+  <br>Contacto: 
+  <br>sdecastro11@gmail.com 
+  </p> 
+  </div>
+
+  <script>
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "30vw";
+  }
+
+  function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
+
+  <div class="grid-container">
+ 
+  <div class="item">
+    <img src="images/02.gif" class="image-grid-vert">
+    <button class="btn-hover" onclick="window.location.href='inplantidentidad.html'">Ver proyecto</button>
+  </div> 
+
+ <div class="item">
+    <img src="images/transparent.png" class="image-grid-horitz">
+    <button class="btn-hover" onclick="window.location.href='inplantentorno.html'">Ver proyecto</button>
+  </div>
+
+  <div class="item" id="sketch1">
+  </div>
+
+  <div class="item">
+    <img src="images/pack.jpg" class="image-grid-horitz" style="width:300px">
+    <button class="btn-hover" onclick="window.location.href='inplantpackaging.html'">Ver proyecto</button>
+  </div>
+
+  <div class="item">
+    <img src="images/ski.gif" class="image-grid-vert">
+  </div>
+  
+  <div class="item">
+    <img src="images/14.png" class="image-grid-horitz" style="width:300px">
+    <button class="btn-hover" onclick="window.location.href='carrilet.html'">Ver proyecto</button>
+  </div>
+
+  <div class="item" id="sketch6">
+  </div>
+ 
+  <div class="item">
+    <img src="images/efimera.jpg" class="image-grid-vert">
+    <button class="btn-hover" onclick="window.location.href='efimera.html'">Ver proyecto</button>
+  </div> 
+
+  <div class="item">
+    <img src="images/calvino.jpg" class="image-grid-horitz" style="width:300px">
+    <button class="btn-hover" onclick="window.location.href='calvino.html'">Ver proyecto</button>
+  </div>
+
+  <div class="item" id="sketch7">
+  </div> 
+
+  <div class="item">
+    <img src="images/08.gif" class="image-grid-vert">
+  </div>
+
+  <div class="item" id="sketch4">
+  </div>
+
+  <div class="item">
+    <img src="images/03.png" class="image-grid-vert">
+  </div>
+  
+  </div>
+
+</body>
+</html>
+
+
+

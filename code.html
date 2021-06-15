@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <title>Sílvia de Castro - code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="p5.js"></script>
+    <script src="sketch.js"></script>
+    
+
+</head>
+
+
+<!-- contingut de la web -->
+
+<body>
+    <!-- header -->
+
+    <!-- menú -->
+<div id="navbar">
+  <a href="index.html">Proyectos</a>
+  <a href="#about"  onclick="openNav()">About</a>
+  <a href="#paint" onclick="setup()">Paint</a>
+  <a href="code.html">Code</a>
+ </div>
+
+
+
+
+
+<div class="grid">
+  
+  <div id="sketch1"></div>
+  
+  <div id="sketch2"></div>
+
+  <div id="sketch3"></div>
+
+  <div id="sketch4"></div>
+
+  <div id="sketch5"></div>
+
+  <div id="sketch6"></div>
+
+  <div id="sketch7"></div>
+
+
+</div>
+
+
+
+
+
+<!-- about desplegable -->
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p id="about">Sílvia de Castro
+  <br>
+  <br>Experiencia:
+  <br>act. ⸻ Diseñador gráfico freelance
+  <br>2020/febr 2021 ⸻ Diseñador gráfico en Run
+  <br>2017/2019  ⸻ Fotogrametría con drones y técnico de calidad en SITEP
+  <br>
+  <br>Formación:
+  <br>2019/2020 ⸻ Máster en Diseño Gráfico, ELISAVA 
+  <br>2018 ⸻  Curso de Serigrafía, Centre cívic Pati Llimona
+  <br>2018 ⸻ Curso Técnico Superior en Diseño Gráfico y Maquetación, Seeway
+  <br>2015/2016 ⸻ Máster en Teledetección y Sistemas de Información Geográfica, Universitat Autònoma de Barcelona (UAB)
+  <br>2011/2015 ⸻ Grado en Ciencias Ambientales, Universitat de Barcelona (UB)
+  <br>
+  <br>Premios:
+  <br>
+  <br>Contacto: sdecastro11@gmail.com 
+  </p> 
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "700px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+/* GALERIA PROJECTES */
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 8px;
+}
+
+.column img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-align: left;
+  
+}
+
+.container:hover .image {
+  opacity: 0.4;
+}
+
+.container:hover .middle {
+  opacity: 1;
+  
+}
+
+.text {
+  color: rgb(43, 43, 43);
+}
+
+
+
+
+
+
+/* GALERIA CODI */
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 300px 300px;
+  gap: 1em;
+  padding-top: 50px;
+  padding-left: 1em;
+  padding-right: 1em;
+  
+}
+
+.grid div {
+  border: 1px dashed rgb(226, 226, 226);
+  aspect-ratio: 1;
+  
+} 

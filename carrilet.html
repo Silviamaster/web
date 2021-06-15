@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sílvia de Castro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<!-- contingut de la web -->
+<body>
+
+    <!-- menú -->
+<div id="navbar">
+  <a href="index.html">Proyectos</a>
+  <a href="#about"  onclick="openNav()">About</a>
+</div>
+    <!-- JavaScript per fer que el menú s'amagui al fer scroll down -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+    <!-- about desplegable -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p id="about"><b>Sílvia de Castro, 1993</b>
+  <br>
+  <br>Experiencia:
+  <br>act. ⸻ Diseñador gráfico freelance
+  <br>2020/febr 2021 ⸻ Diseñador gráfico en Run
+  <br>2017/2019  ⸻ Fotogrametría con drones y técnico de calidad en SITEP
+  <br>
+  <br>Formación:
+  <br>act ⸻ Learning p5.js, a JavaScript library for creative coding
+  <br>2019/2020 ⸻ Máster en Diseño Gráfico, ELISAVA 
+  <br>2018 ⸻  Curso de Serigrafía, Centre cívic Pati Llimona
+  <br>2018 ⸻ Curso Técnico Superior en Diseño Gráfico y Maquetación, Seeway
+  <br>2015/2016 ⸻ Máster en Teledetección y Sistemas de Información Geográfica, Universitat Autònoma de Barcelona (UAB)
+  <br>2011/2015 ⸻ Grado en Ciencias Ambientales, Universitat de Barcelona (UB)
+  <br>
+  <br>Premios: 
+  <br>ADG Laus Estudiantes 2021 ⸻ Proyecto inplant (Bronce)
+  <br>
+  <br>Contacto: 
+  <br>sdecastro11@gmail.com 
+  </p> 
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "30vw";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+<div class="description">
+    <p><b>web design (2021)</b>
+    <br>
+    <br>
+    Diseño de la página web de la guarderia El Carrilet.</p> 
+</div>
+
+<div class="project-images">
+  <img src="images/carrilet00.gif" style="width:100%;">
+  <img src="images/carrilet01.jpg" style="width:100%;">   
+</div>
+
+</body>
+</html>
+
+
+
